@@ -12,7 +12,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="/">Gwynne's Goodies</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,7 +22,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/recipes/">Recipes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
   </nav>
 
   <!-- Hero / Title Section -->
-  <section id="title" class="gradient-background">
+  <section id="title" class="gradient-background py-5">
     <div class="container col-xxl-8 px-4 pt-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -42,7 +42,7 @@
             <a href="/recipes/" class="btn btn-light btn-lg px-4 me-md-2">
               🍪 Recipes
             </a>
-            <a href="#about" class="btn btn-outline-light btn-lg px-4">
+            <a href="/about/" class="btn btn-outline-light btn-lg px-4">
               ℹ️ About
             </a>
           </div>
@@ -51,23 +51,12 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5 text-center">
-    <div class="container">
-      <img class="profile-img mb-3" src="./Gwynne.png" alt="photo of Gwynne" width="140" height="140">
-      <h2 class="fw-bold mb-3">Hi, I’m Gwynne</h2>
-      <p class="lead">Baker and lover of all things sweet. I share my favourite goodies with friends, family, and you.</p>
-    </div>
-  </section>
-
-  <!-- Menu / Features Section -->
-  <section id="menu" class="py-5">
+  <!-- Features / Menu Section -->
+  <section id="features" class="py-5">
     <div class="container mt-5">
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
         <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             🥯
           </div>
           <div>
@@ -75,10 +64,8 @@
             <p>Detailed instruction to make every bite perfect.</p>
           </div>
         </div>
-
         <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             🎂
           </div>
           <div>
@@ -86,10 +73,8 @@
             <p>Birthdays, holidays, celebrations — there’s something for everyone.</p>
           </div>
         </div>
-
         <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             🍪
           </div>
           <div>
@@ -97,30 +82,25 @@
             <p>Cakes, pies, cookies — all homemade with love.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Gallery / Testimonials -->
-  <section id="testimonial">
-    <div class="my-5">
-      <div class="p-5 text-center bg-body-tertiary">
-        <div class="container py-5">
-          <div class="row g-4">
-            <div class="col-lg-3 col-sm-6">
-              <img src="./BananaMuffins.jpg" alt="Banana Muffins" class="img-fluid rounded-4" height="300">
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="./CowboyCookie.jpg" alt="Cowboy Cookie" class="img-fluid rounded-4" height="300">
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="./Lemon.jpg" alt="Lemon Squares" class="img-fluid rounded-4" height="300">
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="./TwixCheesecake.jpg" alt="Twix Cheesecake" class="img-fluid rounded-4" height="300">
-            </div>
-          </div>
+  <section id="testimonial" class="py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-sm-6">
+          <img src="./BananaMuffins.jpg" alt="Banana Muffins" class="img-fluid rounded-4">
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <img src="./CowboyCookie.jpg" alt="Cowboy Cookie" class="img-fluid rounded-4">
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <img src="./Lemon.jpg" alt="Lemon Squares" class="img-fluid rounded-4">
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <img src="./TwixCheesecake.jpg" alt="Twix Cheesecake" class="img-fluid rounded-4">
         </div>
       </div>
     </div>
@@ -141,5 +121,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
