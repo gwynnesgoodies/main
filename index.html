@@ -1,63 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gwynne's Goodies</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold text-danger" href="/">Gwynne's Goodies</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold" href="/">Gwynne's Goodies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-dark" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="/recipes/">Recipes</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/recipes/">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-light text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold text-danger">Welcome to Gwynne's Goodies</h1>
-      <p class="lead">Delicious homemade treats baked with love ❤️</p>
-      <a href="#about" class="btn btn-danger btn-lg mt-3">Learn More</a>
+  <!-- Hero / Title Section -->
+  <section id="title" class="gradient-background">
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./PBPie2.jpg" class="d-block mx-lg-auto img-fluid" alt="Pie" height="200" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gwynne's Goodies</h1>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="/recipes/" class="btn btn-light btn-lg px-4 me-md-2">
+              🍪 Recipes
+            </a>
+            <a href="#about" class="btn btn-outline-light btn-lg px-4">
+              ℹ️ About
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">About Us</h2>
-      <p class="lead">At Gwynne's Goodies, every cookie, cake, and treat is baked with passion and a sprinkle of joy. Perfect for gifts, celebrations, or a little indulgence for yourself.</p>
+  <section id="about" class="py-5 text-center">
+    <div class="container">
+      <img class="profile-img mb-3" src="./Gwynne.png" alt="photo of Gwynne" width="140" height="140">
+      <h2 class="fw-bold mb-3">Hi, I’m Gwynne</h2>
+      <p class="lead">Baker and lover of all things sweet. I share my favourite goodies with friends, family, and you.</p>
+    </div>
+  </section>
+
+  <!-- Menu / Features Section -->
+  <section id="menu" class="py-5">
+    <div class="container mt-5">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            🥯
+          </div>
+          <div>
+            <h3 class="fs-2">Tried & true recipes</h3>
+            <p>Detailed instruction to make every bite perfect.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            🎂
+          </div>
+          <div>
+            <h3 class="fs-2">Sweets for any occasion</h3>
+            <p>Birthdays, holidays, celebrations — there’s something for everyone.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            🍪
+          </div>
+          <div>
+            <h3 class="fs-2">Variety of choices</h3>
+            <p>Cakes, pies, cookies — all homemade with love.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Testimonials -->
+  <section id="testimonial">
+    <div class="my-5">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <img src="./BananaMuffins.jpg" alt="Banana Muffins" class="img-fluid rounded-4" height="300">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <img src="./CowboyCookie.jpg" alt="Cowboy Cookie" class="img-fluid rounded-4" height="300">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <img src="./Lemon.jpg" alt="Lemon Squares" class="img-fluid rounded-4" height="300">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <img src="./TwixCheesecake.jpg" alt="Twix Cheesecake" class="img-fluid rounded-4" height="300">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Contact</h2>
-      <p class="lead">Want to place an order or ask a question? Reach out and let's make something sweet together.</p>
-      <a href="mailto:gwynne@example.com" class="btn btn-danger btn-lg">Email Me</a>
+  <section id="contact" class="gradient-background py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Contact Me</h2>
+      <p>Email me at <a href="mailto:hello@gwynnesgoodies.com">hello@gwynnesgoodies.com</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 Gwynne's Goodies. All rights reserved.</p>
+  <footer class="text-center py-3 border-top">
+    <p class="mb-0">© Gwynne's Goodies</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
